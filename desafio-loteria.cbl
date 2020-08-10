@@ -271,6 +271,7 @@
                                if   ws-sort-num5 <> ws-sort-num6
                                and  ws-sort-num5 <> '00' then
                                     if   ws-sort-num6 <> '00' then
+
                                          perform 2400-conferir-aposta
                                          display ws-sort-num1 ' | ' ws-sort-num2
                                          ' | ' ws-sort-num3 ' | ' ws-sort-num4 ' | '            *>  apresentação dos números sorteados
@@ -341,6 +342,8 @@
                                          ws-diferenca-min ' : ' ws-diferenca-seg
 
                                          display 'Quantidade de Sorteios - ' ws-contador        *>  apresenta o número de vezes que o programa sorteou
+
+                                         perform 3000-finaliza
                                     else
                                          perform 2100-sorteia-loteria
                                     end-if
